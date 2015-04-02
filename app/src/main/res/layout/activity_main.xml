@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context="com.example.drinksafe.MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/ivHeader"
+        android:src="@drawable/topheader"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+
+        android:adjustViewBounds="true" />
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="2"
+         android:paddingTop="20dp"
+         android:paddingLeft="20dp"
+         android:paddingRight="20dp"
+
+       >
+
+         <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="250dp"
+             android:src="@drawable/bluetop"
+             android:id="@+id/ibtnCalc"
+             android:background="#fff7de30"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:scaleType="fitXY"
+             android:adjustViewBounds="false" />
+
+         <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="250dp"
+             android:id="@+id/ibtnNhs"
+             android:src="@drawable/redtop"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:background="#fff7de30"
+             android:scaleType="fitXY"
+             android:adjustViewBounds="false" />
+         </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:weightSum="2"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+
+         >
+         <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="250dp"
+             android:src="@drawable/orangebottom"
+             android:id="@+id/ibtnYoutube"
+             android:adjustViewBounds="false"
+             android:scaleType="fitXY"
+             android:background="#fff7de30"
+             android:layout_weight="1"
+             android:gravity="center"
+
+             />
+
+         <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="250dp"
+             android:id="@+id/ibtnContact"
+             android:src="@drawable/aquabottom"
+             android:background="#fff7de30"
+             android:adjustViewBounds="false"
+             android:scaleType="fitXY"
+             android:layout_weight="1"
+             android:gravity="center"/>
+     </LinearLayout>
+
+</LinearLayout>
