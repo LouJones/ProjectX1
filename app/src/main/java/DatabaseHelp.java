@@ -159,7 +159,7 @@ public class DatabaseHelp extends SQLiteOpenHelper {
 
 
     // Get drinks
-    public List<Drinks> getDrinks() {
+    public static List<Drinks> getDrinks() {
 
         List<Drinks> drinks = null;
 

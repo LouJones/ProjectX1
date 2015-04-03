@@ -28,12 +28,26 @@
         android:textSize="30dp"
         android:layout_weight="0.06" />
 
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spMaleFemale"
-        android:spinnerMode="dropdown"
-        android:background="#FFFFFF"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="221dp"
+            android:layout_height="56dp"
+            android:text="Male"
+            android:id="@+id/rbMale"
+            android:checked="false"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="Female"
+            android:id="@+id/rbFemale"
+            android:checked="false"
+            android:textSize="25dp" />
+    </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
@@ -63,8 +77,9 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner"
-            android:background="#FFFFFF"/>
+            android:id="@+id/spQuantity"
+            android:background="#FFFFFF"
+            android:spinnerMode="dropdown" />
 
     <TextView
         android:layout_width="match_parent"

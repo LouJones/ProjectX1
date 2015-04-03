@@ -1,24 +1,97 @@
 package com.example.drinksafe;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.Toast;
+
+import java.util.LinkedList;
+import java.util.List;
 
 
 public class DrinkCalc extends ActionBarActivity {
     Button home;
+    Spinner spDrink, spQuantity;
+    //The Android's default system path of your application database.
+    private static String DB_PATH="data/data/package com.example.drinksafe/databases/";
+    private static String DB_NAME = "DrinksUnitsCal";
+    private static String TABLE_LOCATION = "drinks";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink_calc);
+
+        spDrink = (Spinner) findViewById(R.id.spDrink);
+        spQuantity= (Spinner) findViewById(R.id.spQuantity);
+        spDrink.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
+        spQuantity.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
         Buttons();
+        // Loading spinner data from database
+       /* loadSpinnerData();
+        getDrinks();*/
+
+        }
+    /*private void loadSpinnerData() {
+
+        // database handler
+        DatabaseHelp db = new DatabaseHelp(getApplicationContext());
+
+        // Spinner Drop down elements
+        List<String> drinks = db.getDrinks();
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, drinks);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter
+                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spDrink.setAdapter(dataAdapter);
     }
+    // Get drinks
+    public static List<Drinks> getDrinks() {
+
+        List<Drinks> drinks = null;
+
+        try {
+
+            String      query  = "SELECT * FROM " + TABLE_LOCATION;
+            SQLiteDatabase  db    = SQLiteDatabase.openDatabase( DB_PATH + DB_NAME , null, SQLiteDatabase.OPEN_READWRITE);
+            Cursor cursor  = db.rawQuery(query, null);
+
+            // go over each row, build elements and add it to list
+            drinks = new LinkedList<Drinks>();
+
+            if (cursor.moveToFirst()) {
+                do {
+
+                    Drinks Drinks  = new Drinks();
+                    Drinks.ID      = Integer.parseInt(cursor.getString(0));
+                    Drinks.Drink    = cursor.getString(1);
+                    Drinks.Units    = Double.parseDouble(cursor.getString(2));
+
+                    drinks.add(Drinks);
+
+                } while (cursor.moveToNext());
+            }
+        } catch(Exception e) {
+            // sql error
+        }
+
+        return drinks;
+    }*/
 
     private void Buttons() {
         home = (Button) findViewById(R.id.btnHome);
@@ -57,5 +130,4 @@ public class DrinkCalc extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

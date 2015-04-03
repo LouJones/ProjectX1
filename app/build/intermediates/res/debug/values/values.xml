@@ -146,6 +146,7 @@
     <string name="title_activity_drink_calc">DrinkCalc</string>
     <string name="title_activity_useful">Useful</string>
     <string name="title_activity_you_tube">YouTube</string>
+    <string name="westcheshire">West Cheshire College Website <a href="http://www.west-cheshire.ac.uk/">http://www.west-cheshire.ac.uk/</a></string>
     <!-- From: file:/C:/Users/Louise/AndroidstudioProjects/Drinksafe1/ProjectX1/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
