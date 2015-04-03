@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-d4b5eddc9ac6062f09f76eaa506f06eded6c892c.jar" />
+        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e2ad8d1b97a90be55815b0d240fd377b6f445ca3.jar" />
     </item>
     <item
-        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\libs\YouTubeAndroidPlayerApi.jar"
+        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\libs\YouTubeAndroidPlayerApi.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="78b8f6e37921559ed21c1fae1f30f9f713494db8">
-        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\pre-dexed\debug\YouTubeAndroidPlayerApi-a0b891eef7d8a91127cd259b2001cecddf2e16e9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\pre-dexed\debug\classes-b68be6784029971491d4e3beb704756d27c7f0a1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\pre-dexed\debug\classes-c54032a9132e6d0e1681bcc901d010fade7eee6d.jar" />
+        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\pre-dexed\debug\YouTubeAndroidPlayerApi-3f9912f23c7591a0055870675f5b8cf170a0b940.jar" />
     </item>
     <item
         jar="C:\Users\Louise\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-719ba314d18a53ffa4caaeaf26e95974a7ec1463.jar" />
+        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-719ba314d18a53ffa4caaeaf26e95974a7ec1463.jar" />
+    </item>
+    <item
+        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\pre-dexed\debug\classes-9888f7e71b6aa1e28427b4945e9f25603507b324.jar" />
+    </item>
+    <item
+        jar="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Users\Louise\AndroidstudioProjects\Drinksafe1\ProjectX1\app\build\intermediates\pre-dexed\debug\classes-07398c0eec8786811a8dfb6405377df4fdddda4e.jar" />
     </item>
 
 </items>
