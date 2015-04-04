@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context="com.example.drinksafe.Useful"
+    android:orientation="vertical"
+        >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:shrinkColumns="0"
+
+
+    >
+       
+<TableRow
+            android:id="@+id/trMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            >
+
+            <TextView
+                android:id="@+id/tvmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usefullinks"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="50sp"
+
+                />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/trWcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvWcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/westcheshire"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30sp"
+            android:gravity="center_vertical" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wcclogo"
+                android:id="@+id/ivWcc" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp" >
+
+            <TextView
+                android:id="@+id/tvRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Testing row to see if works"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/ibtnCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wcclogo" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back to Main Menu"
+                android:id="@+id/btnHome"
+                android:layout_marginTop="147dp" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>

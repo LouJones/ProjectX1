@@ -20,21 +20,21 @@ import java.util.List;
 
 public class DrinkCalc extends ActionBarActivity {
     Button home;
-    Spinner spDrink, spQuantity;
+    /*Spinner spDrink, spQuantity;
     //The Android's default system path of your application database.
     private static String DB_PATH="data/data/package com.example.drinksafe/databases/";
     private static String DB_NAME = "DrinksUnitsCal";
-    private static String TABLE_LOCATION = "drinks";
+    private static String TABLE_LOCATION = "drinks";*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink_calc);
 
-        spDrink = (Spinner) findViewById(R.id.spDrink);
+       /* spDrink = (Spinner) findViewById(R.id.spDrink);
         spQuantity= (Spinner) findViewById(R.id.spQuantity);
         spDrink.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
-        spQuantity.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
+        spQuantity.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);*/
         Buttons();
         // Loading spinner data from database
        /* loadSpinnerData();

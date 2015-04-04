@@ -74,8 +74,8 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
             //new intent to send email
             Intent sendEmail = new Intent(android.content.Intent.ACTION_SEND);
             sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, emailAddress);
-            sendEmail.putExtra(android.content.Intent.EXTRA_SUBJECT, emailAddress);
-            sendEmail.putExtra(android.content.Intent.EXTRA_TEXT, emailAddress);
+            sendEmail.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
+            sendEmail.putExtra(android.content.Intent.EXTRA_TEXT, message);
             sendEmail.setType("Plain/text");
             //start send email activity
             startActivity(sendEmail);

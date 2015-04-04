@@ -8,7 +8,12 @@
     <string name="title_activity_contact_us">ContactUs</string>
     <string name="title_activity_you_tube">YouTube</string>
     <string name="title_activity_useful">Useful</string>
-    <string name="westcheshire">West Cheshire College Website <a href="http://www.west-cheshire.ac.uk/"> - Visit the college website for further information</a></string>
+    <string name="westcheshire"><a href="http://www.west-cheshire.ac.uk/">West Cheshire College Website</a></string>
+    <string name="usefullinks">Please find links to other useful websites below</string>
+    <string name="info">Click on the links below for further information</string>
+    <string name="nhs"><a href="http://www.nhs.uk/livewell/alcohol/Pages/Alcoholhome.aspx">NHS Drinking facts and information</a></string>
+    <string name="drink"><a href="https://www.drinkaware.co.uk/">Drinkaware Website</a></string>
+    <string name="concern"><a href="https://www.alcoholconcern.org.uk/help-and-advice//">Alcohol Concern Website</a></string>
 
 
 </resources>

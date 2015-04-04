@@ -45,7 +45,7 @@
              android:layout_width="wrap_content"
              android:layout_height="250dp"
              android:id="@+id/ibtnNhs"
-             android:src="@drawable/redtop"
+             android:src="@drawable/redtopright"
              android:gravity="center"
              android:layout_weight="1"
              android:background="#fff7de30"

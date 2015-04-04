@@ -813,16 +813,24 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int appbackground=0x7f020057;
-        public static final int aquabottom=0x7f020058;
-        public static final int bluetop=0x7f020059;
-        public static final int ic_launcher=0x7f02005a;
-        public static final int orangebottom=0x7f02005b;
-        public static final int redtop=0x7f02005c;
-        public static final int splash=0x7f02005d;
-        public static final int topheader=0x7f02005e;
+        public static final int alcoholconcern=0x7f020057;
+        public static final int appbackground=0x7f020058;
+        public static final int aquabottom=0x7f020059;
+        public static final int bluetop=0x7f02005a;
+        public static final int choices=0x7f02005b;
+        public static final int drink=0x7f02005c;
+        public static final int drinkaware=0x7f02005d;
+        public static final int ic_launcher=0x7f02005e;
+        public static final int nhs=0x7f02005f;
+        public static final int orangebottom=0x7f020060;
+        public static final int redtopright=0x7f020061;
+        public static final int splash=0x7f020062;
+        public static final int topheader=0x7f020063;
+        public static final int wcclogo=0x7f020064;
+        public static final int wcclogoa=0x7f020065;
     }
     public static final class id {
+        public static final int LinearLayout1=0x7f090054;
         public static final int action_bar=0x7f09001c;
         public static final int action_bar_activity_content=0x7f090000;
         public static final int action_bar_container=0x7f09001b;
@@ -834,7 +842,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090001;
         public static final int action_menu_presenter=0x7f090002;
         public static final int action_mode_close_button=0x7f090024;
-        public static final int action_settings=0x7f090057;
+        public static final int action_settings=0x7f090069;
         public static final int activity_chooser_view_content=0x7f090025;
         public static final int always=0x7f090013;
         public static final int beginning=0x7f09000f;
@@ -857,12 +865,16 @@ containing a value of this type.
         public static final int homeAsUp=0x7f09000a;
         public static final int ibtnCalc=0x7f090050;
         public static final int ibtnContact=0x7f090053;
+        public static final int ibtnCurrent=0x7f09005c;
         public static final int ibtnNhs=0x7f090051;
         public static final int ibtnYoutube=0x7f090052;
         public static final int icon=0x7f09002a;
         public static final int ifRoom=0x7f090015;
         public static final int image=0x7f090027;
+        public static final int ivConcern=0x7f090067;
+        public static final int ivDrinkAware=0x7f090064;
         public static final int ivHeader=0x7f09004f;
+        public static final int ivWcc=0x7f090059;
         public static final int listMode=0x7f090006;
         public static final int list_item=0x7f090029;
         public static final int middle=0x7f090011;
@@ -893,24 +905,37 @@ containing a value of this type.
         public static final int split_action_bar=0x7f09001e;
         public static final int submit_area=0x7f090039;
         public static final int tabMode=0x7f090008;
+        public static final int tableRow1=0x7f09005a;
         public static final int title=0x7f09002b;
         public static final int top_action_bar=0x7f090020;
+        public static final int trConcern=0x7f090065;
+        public static final int trDrinkaware=0x7f090062;
+        public static final int trInfo=0x7f09005d;
+        public static final int trMenu=0x7f090055;
+        public static final int trNhs=0x7f090060;
+        public static final int trWcc=0x7f090057;
+        public static final int tvConcern=0x7f090066;
         public static final int tvContactInfo=0x7f09003c;
         public static final int tvDrinkAmount=0x7f09004a;
+        public static final int tvDrinkaware=0x7f090063;
         public static final int tvEmailPopulated=0x7f09003d;
+        public static final int tvInfo=0x7f09005e;
         public static final int tvMale=0x7f090045;
         public static final int tvMessage=0x7f090040;
+        public static final int tvNhs=0x7f090061;
         public static final int tvResult=0x7f09004d;
+        public static final int tvRow1=0x7f09005b;
         public static final int tvSelectDrink=0x7f090048;
         public static final int tvSubject=0x7f09003e;
         public static final int tvUnits=0x7f09004c;
-        public static final int tvUsefulTop=0x7f090054;
+        public static final int tvWcc=0x7f090058;
         public static final int tvWelcome=0x7f090044;
-        public static final int tvWestCheshire=0x7f090055;
+        public static final int tvWestCheshire=0x7f09005f;
+        public static final int tvmenu=0x7f090056;
         public static final int up=0x7f090021;
         public static final int useLogo=0x7f09000e;
         public static final int withText=0x7f090017;
-        public static final int youtube_player=0x7f090056;
+        public static final int youtube_player=0x7f090068;
     }
     public static final class integer {
         public static final int abc_max_action_buttons=0x7f0a0000;
@@ -943,10 +968,11 @@ containing a value of this type.
         public static final int activity_contact_us=0x7f030018;
         public static final int activity_drink_calc=0x7f030019;
         public static final int activity_main=0x7f03001a;
-        public static final int activity_useful=0x7f03001b;
-        public static final int activity_you_tube=0x7f03001c;
-        public static final int splash=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int activity_u=0x7f03001b;
+        public static final int activity_useful=0x7f03001c;
+        public static final int activity_you_tube=0x7f03001d;
+        public static final int splash=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -974,12 +1000,17 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000c;
         public static final int action_settings=0x7f0b000d;
         public static final int app_name=0x7f0b000e;
-        public static final int hello_world=0x7f0b000f;
-        public static final int title_activity_contact_us=0x7f0b0010;
-        public static final int title_activity_drink_calc=0x7f0b0011;
-        public static final int title_activity_useful=0x7f0b0012;
-        public static final int title_activity_you_tube=0x7f0b0013;
-        public static final int westcheshire=0x7f0b0014;
+        public static final int concern=0x7f0b000f;
+        public static final int drink=0x7f0b0010;
+        public static final int hello_world=0x7f0b0011;
+        public static final int info=0x7f0b0012;
+        public static final int nhs=0x7f0b0013;
+        public static final int title_activity_contact_us=0x7f0b0014;
+        public static final int title_activity_drink_calc=0x7f0b0015;
+        public static final int title_activity_useful=0x7f0b0016;
+        public static final int title_activity_you_tube=0x7f0b0017;
+        public static final int usefullinks=0x7f0b0018;
+        public static final int westcheshire=0x7f0b0019;
     }
     public static final class style {
         /** 
