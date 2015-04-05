@@ -40,7 +40,11 @@ public class DrinkCalc extends ActionBarActivity {
        /* loadSpinnerData();
         getDrinks();*/
 
+
+
         }
+
+
     /*private void loadSpinnerData() {
 
         // database handler

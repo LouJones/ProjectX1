@@ -24,7 +24,6 @@ public class DatabaseHelp extends SQLiteOpenHelper {
     private static String DB_PATH="data/data/package com.example.drinksafe/databases/";
     private static String DB_NAME = "DrinksUnitsCal";
     private static String TABLE_LOCATION = "drinks";
-
     private final Context context;
     private SQLiteDatabase db;
 
@@ -118,20 +117,11 @@ public class DatabaseHelp extends SQLiteOpenHelper {
     }
 
     //Open the database
-    public boolean open() {
+    public void open() throws SQLException {
 
-        try {
-            String myPath = DB_PATH + DB_NAME;
-            db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READWRITE);
-            return true;
-
-        } catch(SQLException sqle) {
-            db = null;
-            return false;
-        }
-
+        String myPath = DB_PATH + DB_NAME;
+        db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READWRITE);
     }
-
     @Override
     public synchronized void close() {
 
