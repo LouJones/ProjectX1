@@ -22,7 +22,7 @@ public class Useful extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_useful);
         buttonSetUp();
-
+        //setting textviews up to be hyperlinks
         TextView west = (TextView) findViewById(R.id.tvWestCheshire);
         west.setMovementMethod(LinkMovementMethod.getInstance());
         TextView nhs = (TextView) findViewById(R.id.tvNhs);

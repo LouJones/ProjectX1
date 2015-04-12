@@ -4,14 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 
 /**
  * Created by Louise on 28/03/2015.
  */
 public class Splash extends Activity {
 MediaPlayer splashsound;
-    String msg = "Android;";
+
 
         @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +24,7 @@ MediaPlayer splashsound;
                         try{sleep(5000);
                             Intent menuIntent = new Intent("com.example.drinksafe.MAIN");
                             startActivity(menuIntent);
-                            Log.d(msg, "in intent");
-                           }catch (InterruptedException e) {
+                            }catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                         finally{

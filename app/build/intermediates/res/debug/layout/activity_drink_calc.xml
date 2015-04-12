@@ -1,6 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -23,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Are you Male or Female? Please Select"
+        android:text="@string/gender"
         android:id="@+id/tvMale"
         android:textSize="30dp"
         android:layout_weight="0.06" />
@@ -53,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Select Your Drink"
+        android:text="@string/selectdrink"
         android:id="@+id/tvSelectDrink"
         android:textSize="30dp" />
 
@@ -70,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Select how many drinks you had"
+            android:text="@string/quantity"
             android:id="@+id/tvDrinkAmount"
             android:textSize="30dp" />
 
@@ -85,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="See Your Units"
+        android:text="@string/seeunits"
         android:id="@+id/tvUnits"
         android:layout_weight="0.05"
         android:textSize="30dp" />
@@ -102,7 +104,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back to Main Menu"
+        android:text="@string/mainmenu"
         android:id="@+id/btnHome"
         android:layout_weight="0.09"
         android:textSize="30dp" />

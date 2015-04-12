@@ -31,9 +31,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="40sp"
                 android:layout_marginBottom="20dp"
-
                 android:layout_span="2" />
-
         </TableRow>
         <TableRow
             android:id="@+id/trInfo"
@@ -42,7 +40,6 @@
             android:paddingTop="5sp"
             android:paddingBottom="5sp"
             >
-
             <TextView
                 android:id="@+id/tvInfo"
                 android:layout_width="wrap_content"
@@ -51,14 +48,9 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="30sp"
                 android:layout_marginBottom="30dp"
-
                 android:layout_span="2"
                  />
-
         </TableRow>
-
-
-
         <TableRow
             android:id="@+id/trWcc"
             android:layout_width="match_parent"
@@ -164,7 +156,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Back to Main Menu"
+                android:text="@string/mainmenu"
                 android:id="@+id/btnHome"
                 android:layout_span="2"
                 android:layout_marginTop="20dp"

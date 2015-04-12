@@ -18,6 +18,7 @@ import android.widget.Toast;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //calling methods below
         drinkCalc();
         healthVid();
         youT();
@@ -45,7 +46,7 @@ import android.widget.Toast;
     }
     private void drinkCalc() {
         // TODO Auto-generated method stub
-        //allocating btnGravity to previously named ibtnGravity in xml
+        //allocating ibtnCalc to variable ibtncalculate
         ibtnCalculate = (ImageButton) findViewById(R.id.ibtnCalc);
         //setting on click listener for button to do something when clicked
         ibtnCalculate.setOnClickListener(new View.OnClickListener(){
@@ -63,7 +64,7 @@ import android.widget.Toast;
     }
     private void healthVid() {
         // TODO Auto-generated method stub
-        //allocating btnGravity to previously named ibtnGravity in xml
+        //allocating ibtnNhsa to link with ibtnNhs in xml
         ibtnNhsa = (ImageButton) findViewById(R.id.ibtnNhs);
         //setting on click listener for button to do something when clicked
         ibtnNhsa.setOnClickListener(new View.OnClickListener(){
@@ -81,7 +82,7 @@ import android.widget.Toast;
     }
     private void youT() {
         // TODO Auto-generated method stub
-        //allocating btnGravity to previously named ibtnGravity in xml
+        //linking ibtnYou with ibtnYoutube in xml
         ibtnYou = (ImageButton) findViewById(R.id.ibtnYoutube);
         //setting on click listener for button to do something when clicked
         ibtnYou.setOnClickListener(new View.OnClickListener(){
@@ -99,7 +100,7 @@ import android.widget.Toast;
     }
     private void contact() {
         // TODO Auto-generated method stub
-        //allocating btnGravity to previously named ibtnGravity in xml
+        //linking ibtnContacta with ibtnContact in xml
         ibtnContacta = (ImageButton) findViewById(R.id.ibtnContact);
         //setting on click listener for button to do something when clicked
         ibtnContacta.setOnClickListener(new View.OnClickListener(){

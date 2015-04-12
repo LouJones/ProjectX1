@@ -63,7 +63,7 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
                     "A Subject must be entered", Toast.LENGTH_SHORT).show();
             //if message field empty display message
         } else if (messageField.getText().toString().length() == 0) {
-
+            //if message empty display message
             Toast.makeText(ContactUs.this,
                     "A message must be entered", Toast.LENGTH_SHORT).show();
 
@@ -73,6 +73,7 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
             String emailAddress[] = {email};
             //new intent to send email
             Intent sendEmail = new Intent(android.content.Intent.ACTION_SEND);
+            //putextra to carry information to email app
             sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, emailAddress);
             sendEmail.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
             sendEmail.putExtra(android.content.Intent.EXTRA_TEXT, message);
@@ -87,7 +88,7 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
 
     private void detailsFromForm() {
         // TODO Auto-generated method stub
-        //store in email what the user enters in the to field
+        //store in email what the user enters in the subject and message
         email = toField.getText().toString();
         subject = subjectField.getText().toString();
         message = messageField.getText().toString();

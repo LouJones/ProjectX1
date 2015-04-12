@@ -17,11 +17,10 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     Button main;
+        //API for my youtube video
         public static final String API_KEY = "AIzaSyBzwHsLoTZExz8MPM9LL866EwKTCVZvunM";
-
         //my youtube video id>
         public static final String VIDEO_ID = "6jl1ur2qrY8";
-
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -32,6 +31,7 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
             YouTubePlayerView youTubePlayerView;
             //telling which object to look for
             youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player);
+            //API declared in this class
             youTubePlayerView.initialize(API_KEY, this);
             //call buttons method
             Buttons();
@@ -49,6 +49,7 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
                 //message to say you clicked button
                 Toast.makeText(YouTube.this, "You clicked the Main Menu Button", Toast.LENGTH_SHORT).show();
                 Intent mainmenu = new Intent("com.example.drinksafe.MAIN");
+                //start activity declared in intent
                 startActivity(mainmenu);
             }
         });
@@ -56,6 +57,7 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
 
     @Override
         public void onInitializationFailure(Provider provider, YouTubeInitializationResult result) {
+        //message for user if video fails to work
             Toast.makeText(this, "Failed to Initialize!", Toast.LENGTH_LONG).show();
         }
 
@@ -65,8 +67,7 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
             //creating listeners for player
             player.setPlayerStateChangeListener(playerStateChangeListener);
             player.setPlaybackEventListener(playbackEventListener);
-
-            //start playing video
+            //start playing video with this apps Video ID
             if (!wasRestored) {
                 player.cueVideo(VIDEO_ID);
             }
