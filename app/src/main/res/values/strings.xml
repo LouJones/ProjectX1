@@ -15,6 +15,7 @@
     <string name="gender">Are you Male or Female? Please select:</string>
     <string name="quantity">Select the quantity of your drinks:</string>
     <string name="entersubject">Enter the subject of your email:</string>
+    <string name="welcome">Welcome to the Drink Unit Calculator, Do you know your units???</string>
     <string name="Pleasecompletecontact">Please complete the form below and click send to contact us with any queries</string>
     <string name="westcheshire"><a href="http://www.west-cheshire.ac.uk/">West Cheshire College Website</a></string>
     <string name="usefullinks">Please find links to other useful websites below</string>

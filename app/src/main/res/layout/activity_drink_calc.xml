@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome to the Drink Unit Calculator, Do you know your units???"
+        android:text="@string/welcome"
         android:id="@+id/tvWelcome"
         android:textSize="30dp"
         android:layout_weight="0.15" />
@@ -31,6 +31,7 @@
         android:layout_weight="0.06" />
 
     <RadioGroup
+        android:id="@+id/rgMale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
