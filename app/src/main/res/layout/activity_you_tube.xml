@@ -19,7 +19,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back to Main Menu"
+        android:text="@string/mainmenu"
         android:id="@+id/btnHome"
         android:textSize="20dp" />
 

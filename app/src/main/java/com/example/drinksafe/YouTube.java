@@ -39,6 +39,7 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
         }
 
     private void Buttons() {
+        //linking button in activity to button declared above
         main = (Button) findViewById(R.id.btnHome);
         //setting on click listener for button to do something when clicked
         main.setOnClickListener(new View.OnClickListener() {
@@ -67,14 +68,14 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
             //creating listeners for player
             player.setPlayerStateChangeListener(playerStateChangeListener);
             player.setPlaybackEventListener(playbackEventListener);
-            //start playing video with this apps Video ID
+            //start playing video with Video ID
             if (!wasRestored) {
                 player.cueVideo(VIDEO_ID);
             }
         }
-
+//creating an instance of the youtube player class event listener
         private PlaybackEventListener playbackEventListener = new PlaybackEventListener() {
-
+//using the youtube player methods
             @Override
             public void onBuffering(boolean arg0) {
             }
@@ -96,7 +97,7 @@ public class YouTube extends YouTubeBaseActivity implements YouTubePlayer.OnInit
             }
 
         };
-
+//creating an instance of the youtiube player class to to use the player state listener methods
         private PlayerStateChangeListener playerStateChangeListener = new PlayerStateChangeListener() {
 
             @Override

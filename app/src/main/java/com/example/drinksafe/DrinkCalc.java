@@ -48,7 +48,7 @@ public class DrinkCalc extends ActionBarActivity {
     /*private void loadSpinnerData() {
 
         // database handler
-        DatabaseHelp db = new DatabaseHelp(getApplicationContext());
+        com.example.drinksafe.DatabaseHelp db = new com.example.drinksafe.DatabaseHelp(getApplicationContext());
 
         // Spinner Drop down elements
         List<String> drinks = db.getDrinks();

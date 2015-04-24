@@ -15,12 +15,15 @@ import java.util.List;
 
 
 public class Useful extends ActionBarActivity {
+    //declaring button variable
     Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //set page to activity_useful to open
         setContentView(R.layout.activity_useful);
+        //call buttonSetUp method below
         buttonSetUp();
         //setting textviews up to be hyperlinks
         TextView west = (TextView) findViewById(R.id.tvWestCheshire);
@@ -34,6 +37,7 @@ public class Useful extends ActionBarActivity {
     }
 
     private void buttonSetUp() {
+        //linking button in activity page to variable above
         home = (Button) findViewById(R.id.btnHome);
         //setting on click listener for button to do something when clicked
         home.setOnClickListener(new View.OnClickListener() {

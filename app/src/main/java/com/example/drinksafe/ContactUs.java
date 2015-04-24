@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 
 public class ContactUs extends ActionBarActivity implements View.OnClickListener {
+    //declaring all variables/places for the objects to be held to use with code
     EditText subjectField, messageField;
     TextView toField;
     Button send, home;
@@ -21,30 +22,42 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //set page to the activity screen for contact us
         setContentView(R.layout.activity_contact_us);
+        //call setUpButtons method below
         setUpButtons();
     }
 
     private void setUpButtons() {
+        //linking above declared fields to the field in the activity screen
         toField = (TextView) findViewById(R.id.tvEmailPopulated);
+        //setting the email address to the related field in activity
         toField.setText("To: Louisedjones@gmail.com");
+        //linking fields in activity with allocated variables above
         subjectField = (EditText) findViewById(R.id.etSubject);
         messageField = (EditText) findViewById(R.id.etMessage);
         send = (Button) findViewById(R.id.btnSend);
         home = (Button) findViewById(R.id.btnMain);
+        //allowing the two buttons to be listeners to create an action within 'this' class
         send.setOnClickListener(this);
         home.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+        //switch to allow each button an action
         switch (v.getId()) {
+            //if select send email button call sendEmail method below
             case R.id.btnSend:
                 sendEmail();
+                //stop once done do not move on to next in case
                 break;
+            //if select main menu button use intent created called openMain to open Main menu
             case R.id.btnMain:
                 Intent openMain = new Intent(ContactUs.this, MainActivity.class);
+                //start created intent to open main menu
                 startActivity(openMain);
+                //stop once done
                 break;
             default:
                 break;
@@ -52,13 +65,13 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
     }
 
     private void sendEmail() {
+        //if to field empty
         if (toField.getText().toString().length() == 0) {
             //if to field empty display message
             Toast.makeText(ContactUs.this,
                     "An e-mail address must be entered", Toast.LENGTH_SHORT).show();
             //if subject field empty display message
         } else if (subjectField.getText().toString().length() == 0) {
-
             Toast.makeText(ContactUs.this,
                     "A Subject must be entered", Toast.LENGTH_SHORT).show();
             //if message field empty display message
@@ -70,6 +83,7 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         } else {
             //call details from form method
             detailsFromForm();
+            //allocating emailAddress
             String emailAddress[] = {email};
             //new intent to send email
             Intent sendEmail = new Intent(android.content.Intent.ACTION_SEND);

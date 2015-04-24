@@ -1,4 +1,4 @@
-/**
+package com.example.drinksafe; /**
  * Created by Louise on 03/04/2015.
  */
 import android.content.Context;
