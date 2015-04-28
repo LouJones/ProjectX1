@@ -76,17 +76,17 @@
     <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/etName"
+    android:layout_weight="0.08"
+    android:background="#ffffffff"
+    android:text="Enter Email Address" />
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:id="@+id/etEmail"
     android:layout_weight="0.08"
     android:background="#ffffffff"
         android:text="Enter Name" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etName"
-        android:layout_weight="0.08"
-        android:background="#ffffffff"
-        android:text="Enter Email Address" />
 </TableRow>
     </TableLayout>
 
@@ -96,7 +96,8 @@
         android:text="@string/add"
         android:id="@+id/btnAdd"
         android:background="#ff9e9e9e"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:onClick="newName"/>
 
     <Button
         android:layout_width="match_parent"

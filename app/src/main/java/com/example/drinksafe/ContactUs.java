@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 public class ContactUs extends ActionBarActivity implements View.OnClickListener {
     //declaring all variables/places for the objects to be held to use with code
-    EditText subjectField, messageField;
+    EditText subjectField, messageField, name, emailadd;
     TextView toField;
-    Button send, home;
-    String email, subject, message;
+    Button send, home, addname;
+    String email, subject, message, names;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,5 +106,20 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         email = toField.getText().toString();
         subject = subjectField.getText().toString();
         message = messageField.getText().toString();
+    }
+    @Override
+    public void onStart(){
+        super.onStart();
+        name=(EditText)findViewById(R.id.etName);
+        emailadd=(EditText)findViewById(R.id.etEmail);
+
+    }
+    public void newName(View view){
+        myDBHandler dbhandler = new myDBHandler(this, null, null, 1);
+        String names = name.getText().toString();
+        String emailaddr = emailadd.getText().toString();
+         Name name = new Name (names, emailaddr);
+
+        dbhandler.addName(name);
     }
 }
