@@ -32,7 +32,7 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         //linking above declared fields to the field in the activity screen
         toField = (TextView) findViewById(R.id.tvEmailPopulated);
         //setting the email address to the related field in activity
-        toField.setText("To: Louisedjones@gmail.com");
+        toField.setText("Louisedjones@gmail.com");
         //linking fields in activity with allocated variables above
         subjectField = (EditText) findViewById(R.id.etSubject);
         messageField = (EditText) findViewById(R.id.etMessage);
@@ -83,7 +83,7 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         } else {
             //call details from form method
             detailsFromForm();
-            //allocating emailAddress
+            //allocating emailAddress to array
             String emailAddress[] = {email};
             //new intent to send email
             Intent sendEmail = new Intent(android.content.Intent.ACTION_SEND);

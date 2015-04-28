@@ -6,12 +6,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.drinksafe.DrinkCalc"
+    tools:context="com.example.drinksafe.DrinkCalc$PlaceholderFragment"
     android:background="@drawable/appbackground"
     android:orientation="vertical"
     android:weightSum="1">
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,39 +17,7 @@
         android:text="@string/welcome"
         android:id="@+id/tvWelcome"
         android:textSize="30dp"
-        android:layout_weight="0.15" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/gender"
-        android:id="@+id/tvMale"
-        android:textSize="30dp"
-        android:layout_weight="0.06" />
-
-    <RadioGroup
-        android:id="@+id/rgMale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:layout_width="221dp"
-            android:layout_height="56dp"
-            android:text="Male"
-            android:id="@+id/rbMale"
-            android:checked="false"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:text="Female"
-            android:id="@+id/rbFemale"
-            android:checked="false"
-            android:textSize="25dp" />
-    </RadioGroup>
-
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,16 +25,58 @@
         android:text="@string/selectdrink"
         android:id="@+id/tvSelectDrink"
         android:textSize="30dp" />
-
-    <Spinner
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spDrink"
-        android:spinnerMode="dropdown"
-        android:background="#FFFFFF"/>
-
-
-
+        android:weightSum="2">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgLeft">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beer4"
+                android:textSize="30dp"
+                android:checked="false"
+                android:id="@+id/rbBeer" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beer5"
+                android:textSize="30dp"
+                android:checked="false"
+                android:id="@+id/rbBeer5" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cider"
+                android:textSize="30dp"
+                android:checked="false"
+                android:id="@+id/rbCider" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wine"
+                android:textSize="30dp"
+                android:checked="false"
+                android:id="@+id/rbWine" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spirits"
+                android:textSize="30dp"
+                android:checked="false"
+                android:id="@+id/rbSpirits" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pop"
+                android:textSize="30dp"
+                android:checked="false"
+                android:id="@+id/rbPops" />
+        </RadioGroup>
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,14 +84,12 @@
             android:text="@string/quantity"
             android:id="@+id/tvDrinkAmount"
             android:textSize="30dp" />
-
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spQuantity"
-            android:background="#FFFFFF"
-            android:spinnerMode="dropdown" />
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:id="@+id/etRadioGrp1"
+        android:background="#ffffffff"
+        android:inputType="number"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -92,15 +98,19 @@
         android:id="@+id/tvUnits"
         android:layout_weight="0.05"
         android:textSize="30dp" />
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="84dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/tvResult"
-        android:textSize="30dp"
-        android:layout_weight="0.09" />
-
+        android:textSize="20dp"
+        android:background="#ffffffff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Units"
+        android:id="@+id/btnUnit"
+        android:textSize="30dp"/>
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
@@ -109,5 +119,9 @@
         android:id="@+id/btnHome"
         android:layout_weight="0.09"
         android:textSize="30dp" />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCol1"
+        android:visibility="invisible" />
 </LinearLayout>

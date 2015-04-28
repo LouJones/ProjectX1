@@ -12,11 +12,13 @@ import android.widget.Toast;
 
 
     public class MainActivity extends Activity {
+        //declaring variables and abject to be used within class
     ImageButton ibtnYou, ibtnContacta, ibtnNhsa, ibtnCalculate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setting content view to show activity_main
         setContentView(R.layout.activity_main);
         //calling methods below
         drinkCalc();

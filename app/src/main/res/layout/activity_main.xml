@@ -4,9 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appbackground"
-    tools:context="com.example.drinksafe.MainActivity"
-    >
-
+    tools:context="com.example.drinksafe.MainActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -17,7 +15,6 @@
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:adjustViewBounds="true" />
-
      <LinearLayout
          android:orientation="horizontal"
          android:layout_width="match_parent"
@@ -25,10 +22,7 @@
          android:weightSum="2"
          android:paddingTop="20dp"
          android:paddingLeft="20dp"
-         android:paddingRight="20dp"
-
-       >
-
+         android:paddingRight="20dp">
          <ImageButton
              android:layout_width="wrap_content"
              android:layout_height="250dp"
@@ -39,7 +33,6 @@
              android:layout_weight="1"
              android:scaleType="fitXY"
              android:adjustViewBounds="false" />
-
          <ImageButton
              android:layout_width="wrap_content"
              android:layout_height="250dp"

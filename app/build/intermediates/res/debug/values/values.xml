@@ -146,24 +146,33 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Drinksafe</string>
+    <string name="beer4">Beer 4.0% 568ml (Pint)</string>
+    <string name="beer5">Beer 5.0% 330ml (Bottle)</string>
+    <string name="cider">Cider 4.5% 568ml (Pint)</string>
     <string name="concern"><a href="https://www.alcoholconcern.org.uk/help-and-advice//">Alcohol Concern Website</a></string>
+    <string name="day">Insert Day</string>
     <string name="drink"><a href="https://www.drinkaware.co.uk/">Drinkaware Website</a></string>
     <string name="entermessage">Enter your message:</string>
     <string name="entersubject">Enter the subject of your email:</string>
+    <string name="find">Find previous units</string>
     <string name="gender">Are you Male or Female? Please select:</string>
     <string name="info">Click on the links below for further information</string>
     <string name="mainmenu">Back to Main Menu</string>
     <string name="nhs"><a href="http://www.nhs.uk/livewell/alcohol/Pages/Alcoholhome.aspx">NHS Drinking facts and information</a></string>
-    <string name="quantity">Select the quantity of your drinks:</string>
+    <string name="pop">Alcopops 4.0% 275ml (Bottle)</string>
+    <string name="quantity">Enter the quantity of your drinks:</string>
     <string name="seeunits">See your units:</string>
     <string name="selectdrink">Select your drink:</string>
     <string name="sendemail">Send Email</string>
+    <string name="spirits">Spirits 40% 25ml (Glass)</string>
     <string name="title_activity_contact_us">ContactUs</string>
     <string name="title_activity_drink_calc">DrinkCalc</string>
     <string name="title_activity_useful">Useful</string>
     <string name="title_activity_you_tube">YouTube</string>
     <string name="usefullinks">Please find links to other useful websites below</string>
+    <string name="welcome">Welcome to the Drink Unit Calculator, Do you know your units???</string>
     <string name="westcheshire"><a href="http://www.west-cheshire.ac.uk/">West Cheshire College Website</a></string>
+    <string name="wine">Wine 13% 175ml (Glass)</string>
     <!-- From: file:/C:/Users/Louise/AndroidstudioProjects/Drinksafe1/ProjectX1/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
