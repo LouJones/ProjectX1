@@ -41,6 +41,15 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         //allowing the two buttons to be listeners to create an action within 'this' class
         send.setOnClickListener(this);
         home.setOnClickListener(this);
+        addname=(Button)findViewById(R.id.btnAdd);
+       addname.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                newName();
+            }
+        });
+        //setting the onclick listener for the home button to use the intent in manifest to open the main menu
     }
 
     @Override
@@ -114,7 +123,7 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         emailadd=(EditText)findViewById(R.id.etEmail);
 
     }
-    public void newName(View view){
+    public void newName(){
         myDBHandler dbhandler = new myDBHandler(this, null, null, 1);
         String names = name.getText().toString();
         String emailaddr = emailadd.getText().toString();

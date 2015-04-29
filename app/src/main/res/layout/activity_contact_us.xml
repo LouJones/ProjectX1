@@ -96,8 +96,8 @@
         android:text="@string/add"
         android:id="@+id/btnAdd"
         android:background="#ff9e9e9e"
-        android:layout_marginTop="10dp"
-        android:onClick="newName"/>
+        android:layout_marginTop="10dp"/>
+        <!--android:onClick="newName"/>-->
 
     <Button
         android:layout_width="match_parent"
