@@ -17,7 +17,7 @@ public class myDBHandler extends SQLiteOpenHelper {
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_EMAILADD = "emailadd";
 
-    public myDBHandler(Context context, String name, String emailadd, SQLiteDatabase.CursorFactory factory, int version) {
+    public myDBHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
     }
 

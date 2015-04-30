@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 public class ContactUs extends ActionBarActivity implements View.OnClickListener {
     //declaring all variables/places for the objects to be held to use with code
-    EditText subjectField, messageField, name, emailadd;
+    EditText subjectField, messageField;
     TextView toField;
-    Button send, home, addname;
-    String email, subject, message, names;
+    Button send, home;
+    String email, subject, message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,14 +41,18 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         //allowing the two buttons to be listeners to create an action within 'this' class
         send.setOnClickListener(this);
         home.setOnClickListener(this);
-        addname=(Button)findViewById(R.id.btnAdd);
+
+        //code for database that run out of time to complete
+        //linking the add name button to the button in activity
+       /* addname=(Button)findViewById(R.id.btnAdd);
+        //setting the onclick listener for the add name button and calling the newName method below
        addname.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 newName();
             }
-        });
+        });*/
         //setting the onclick listener for the home button to use the intent in manifest to open the main menu
     }
 
@@ -116,19 +120,25 @@ public class ContactUs extends ActionBarActivity implements View.OnClickListener
         subject = subjectField.getText().toString();
         message = messageField.getText().toString();
     }
-    @Override
+    //methods for database class which ran out of time to complete
+    /*@Override
     public void onStart(){
+        //calling the super class method
         super.onStart();
+        //linking the activity objects with the variable declared above
         name=(EditText)findViewById(R.id.etName);
         emailadd=(EditText)findViewById(R.id.etEmail);
 
     }
     public void newName(){
+        //creating and instance of the database class to use
         myDBHandler dbhandler = new myDBHandler(this, null, null, 1);
+        //declaring names and calling getText method from the class
         String names = name.getText().toString();
         String emailaddr = emailadd.getText().toString();
+        //creating and instance of the Name class
          Name name = new Name (names, emailaddr);
-
+//calling the addName method within the database helper class
         dbhandler.addName(name);
-    }
+    }*/
 }

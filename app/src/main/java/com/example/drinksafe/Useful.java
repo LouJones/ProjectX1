@@ -47,32 +47,11 @@ public class Useful extends ActionBarActivity {
                 // TODO Auto-generated method stub
                 //message to say you clicked button
                 Toast.makeText(Useful.this, "You clicked the Main Menu Button", Toast.LENGTH_SHORT).show();
+                //dclaring the intent from the manifest and assigning it to mainmenu
                 Intent mainmenu = new Intent("com.example.drinksafe.MAIN");
+                //starting the intent created
                 startActivity(mainmenu);
             }
         });
     }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_useful, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-    }
+}

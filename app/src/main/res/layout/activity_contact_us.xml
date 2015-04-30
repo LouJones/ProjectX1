@@ -58,8 +58,8 @@
         android:layout_weight="0.27"
         android:background="#ffffff"
         android:layout_marginTop="10dp"/>
-
-    <TextView
+<!--objects for database which are not used due to lack of time-->
+    <!--<TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/addname"
@@ -67,8 +67,8 @@
         android:id="@+id/textView"
         android:layout_marginTop="5sp"
         android:textIsSelectable="false"
-        android:layout_weight="0.08" />
-    <TableLayout
+        android:layout_weight="0.08" />-->
+    <!--<TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="2">
@@ -79,25 +79,24 @@
     android:id="@+id/etName"
     android:layout_weight="0.08"
     android:background="#ffffffff"
-    android:text="Enter Email Address" />
+        android:hint="Enter Email Address" />
     <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/etEmail"
     android:layout_weight="0.08"
     android:background="#ffffffff"
-        android:text="Enter Name" />
+        android:hint="Enter Name" />
 </TableRow>
-    </TableLayout>
+    </TableLayout>-->
 
-    <Button
+    <!--<Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add"
         android:id="@+id/btnAdd"
         android:background="#ff9e9e9e"
-        android:layout_marginTop="10dp"/>
-        <!--android:onClick="newName"/>-->
+        android:layout_marginTop="10dp"/>-->
 
     <Button
         android:layout_width="match_parent"
